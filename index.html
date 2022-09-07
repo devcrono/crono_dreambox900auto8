@@ -2,7 +2,7 @@
 <html manifest="cache.manifest"><head>
 <meta charset="UTF-8" />
 <link rel="shortcut icon" href="img/favicon.ico" />
-<title>CRONO_ DREAMBOX PS4 FW 9.00 V8</title>
+<title>CRONO_ DREAMBOX PS4 FW 9.00 V9</title>
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/font.css">
@@ -31,11 +31,11 @@
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline: " + Percent + "%";}
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Instalado com Successo ✔";},1000);setTimeout(function(){window.msgs.innerHTML="Agora Feche e Re-Abra o Navegador...";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
-<h1 id="msgs">CRONO_ DREAMBOX PS4 FW 9.00 V8</h1>
+<h1 id="msgs">CRONO_ DREAMBOX PS4 FW 9.00 V9</h1>
 <hr>
 <br>
 <div id="main-section">
-<button class="btn btn-main" type="button"><img class="icone" src="img/HenEnable.png" onclick=load_goldhen223()><br> GoldHEN V2.2.3 </button>
+<button class="btn btn-main" type="button"><img class="icone" src="img/HenEnable.png" onclick=load_goldhen224()><br> GoldHEN V2.2.4 </button>
 <button class="btn btn-main" type="button"><img class="icone" src="img/HenEnable.png" onclick=load_goldhen222()><br> GoldHEN V2.2.2 </button>
 <br>
 
@@ -207,9 +207,9 @@ function loadScript(path)
     return xhr.responseText;
 }
 
-function load_goldhen223(){
-LoadedMSG = "Carregando GoldHEN v2.2.3 ...";
-PLfile = "goldhen_2.2.3.bin";
+function load_goldhen224(){
+LoadedMSG = "Carregando GoldHEN v2.2.4 ...";
+PLfile = "goldhen_2.2.4.bin";
 exec_loader = "payload";
 load_poc();
 }
